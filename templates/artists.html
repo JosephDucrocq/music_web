@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Artist list</title>
+  </head>
+  <body>
+    <h1>Artist List</h1>
+    
+    {% for artist in artists %}
+      <div>
+        <h2>
+          <a href=/artists/{{artist.id}}>{{artist.name}}</a>
+        </h2>
+      </div>
+    {% endfor %}
+
+    <a href="/displayalbums">See albums list</a>
+  </body>
+</html>

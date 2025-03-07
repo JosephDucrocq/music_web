@@ -1,0 +1,21 @@
+<!-- GET /albums -->
+
+<html>
+  <head>
+    <title>Album list</title>
+  </head>
+  <body>
+    <h1>Album List</h1>
+    
+    {% for album in albums %}
+      <div>
+          <a href=/albums/{{album.id}}>{{album.title}}</a>
+      </div>
+    {% endfor %}
+
+    <a href="/albums/new">Add a new album</a>
+    <br>
+    <br>
+    <a href="/displayartists">See artist list</a>
+  </body>
+</html>
